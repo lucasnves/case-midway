@@ -1,50 +1,107 @@
-# Welcome to your Expo app 👋
+# Projeto de Pagamento PIX - Midway
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto simula um trajeto de pagamento via PIX utilizando cartão de crédito, desenvolvido com **React Native**. O objetivo do projeto é criar uma interface de usuário conforme o protótipo de UX fornecido, permitindo ao usuário selecionar a quantidade de parcelas e calcular o valor final do pagamento via PIX.
 
-## Get started
+## Funcionalidades
 
-1. Install dependencies
+O sistema permite a realização das seguintes operações:
 
+- **Listagem de opções de parcelamento** com respectivos valores e taxas.
+- **Cálculo do valor final** de acordo com o número de parcelas selecionadas.
+- **Validações básicas**, como valores inválidos ou ausência de seleção.
+- **Responsividade e usabilidade** em dispositivos móveis.
+- **Interação realista** com o mock da API para simular o processo de pagamento via PIX.
+
+## Tecnologias Utilizadas
+
+- **React Native**: Framework utilizado para o desenvolvimento do aplicativo mobile.
+- **JSON Mock**: Simulação da API com dados mockados.
+- **JavaScript/TypeScript**: Linguagens utilizadas para programação.
+- **React Navigation**: Para navegação entre as telas do aplicativo.
+- **Styled Components**: Para estilização das telas.
+
+## Estrutura do Projeto
+   ### Abaixo, estão as páginas e componentes e suas responsabilidades no projeto:
+   
+   #### Estrutura das Páginas
+   
+   - pix.tsx: Página inicial onde o usuário escolhe a forma de pagamento (PIX) e o número de parcelas.
+   - pixConfirmation.tsx: Página que exibe a confirmação do pagamento ou erro na transação.
+
+   #### Estrutura de Componentes
+   
+   - ButtonSelect.tsx: Componente para seleção de opções de pagamento e parcelamento.
+   - CardInstallments.tsx: Exibe as opções de parcelamento com valores.
+   - FooterPayment.tsx: Exibe o rodapé com informações relacionadas ao pagamento.
+   - CardService.tsx: Exibe alguns serviçoes do App como o Pix.
+   - CardPaymentMethod.tsx: Componente que exibe o modo de pagamento escolhido.
+   - HeaderAmount.tsx: Exibe o valor total e outras opções do index.
+
+
+```bash
+├── src/
+│   ├── app/
+│   │   ├── (tabs)/
+│   │   │   ├── _layout.tsx
+│   │   │   └── index.tsx
+│   │   ├── pages/
+│   │   │   ├── pix.tsx
+│   │   │   └── pixConfirmation.tsx
+│   ├── assets/
+│   │   └── images/
+│   │       └── payment-methods/
+│   ├── components/
+│   │   ├── ButtonSelect.tsx
+│   │   ├── CardInstallments.tsx
+│   │   ├── CardPaymentMethod.tsx
+│   │   ├── CardService.tsx
+│   │   ├── FooterPayment.tsx
+│   │   ├── Icon.tsx
+│   │   ├── ParallaxScrollView.tsx
+│   │   └── HeaderAmount.tsx
+│   ├── interfaces/
+│   │   ├── icons.tsx
+│   │   └── interfaces.tsx
+│   ├── lists/
+│   │   ├── json.ts
+│   │   └── services.ts
+│   ├── services/
+│   │   └── api.ts
+│   └── styles/
+│       ├── Colors.ts
+│       └── Styles.ts
+└── README.md
+```
+
+## Como Executar o Projeto
+
+### Pré-requisitos
+
+Antes de rodar o projeto, é necessário ter o **Node.js** instalado em sua máquina. Você também precisará do **npm** ou **yarn** para gerenciar as dependências.
+
+### Passos para Instalação
+
+1.	Clone o repositório:
+   ```bash
+   git clone https://github.com/lucasnves/case-midway.git
+   cd case-midway
+   ```
+2.	Instale as dependências:
+   - Usando npm:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+   - Usando yarn:
    ```bash
-    npx expo start
+   yarn install
    ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+3. Rode o projeto:
 ```bash
-npm run reset-project
+npx expo start
 ```
+- Isso abrirá a interface do Expo, onde você pode escolher um emulador de iOS/Android para rodar.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Considerações Finais
 
-## Learn more
+Gostei muito de trabalhar neste projeto, pois foi uma ótima oportunidade para aplicar conceitos de React Native e desenvolver uma interface prática e funcional, foi bem interessante criar uma jornada de pagamento via PIX, mesmo com o uso de dados simulados e apesar de ser um projeto simples, foi muito legal ver tudo funcionando e poder testar as interações.
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
