@@ -36,6 +36,7 @@ O sistema permite a realização das seguintes operações:
    - CardService.tsx: Exibe alguns serviçoes do App como o Pix.
    - CardPaymentMethod.tsx: Componente que exibe o modo de pagamento escolhido.
    - HeaderAmount.tsx: Exibe o valor total e outras opções do index.
+   - Icon.tsx: Componente que renderiza ícones dinâmicos.
 
 
 ```bash
