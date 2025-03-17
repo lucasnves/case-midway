@@ -1,4 +1,4 @@
-# Projeto de Pagamento PIX - Midway
+# Projeto de Pagamento PIX
 
 Este projeto simula um trajeto de pagamento via PIX utilizando cartão de crédito, desenvolvido com **React Native**. O objetivo do projeto é criar uma interface de usuário conforme o protótipo de UX fornecido, permitindo ao usuário selecionar a quantidade de parcelas e calcular o valor final do pagamento via PIX.
 
@@ -101,8 +101,3 @@ Antes de rodar o projeto, é necessário ter o **Node.js** instalado em sua máq
 npx expo start
 ```
 - Isso abrirá a interface do Expo, onde você pode escolher um emulador de iOS/Android para rodar.
-
-# Considerações Finais
-
-Gostei muito de trabalhar neste projeto, pois foi uma ótima oportunidade para aplicar conceitos de React Native e desenvolver uma interface prática e funcional, foi bem interessante criar uma jornada de pagamento via PIX, mesmo com o uso de dados simulados e apesar de ser um projeto simples, foi muito legal ver tudo funcionando e poder testar as interações.
-
